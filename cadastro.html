@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Novo Usuário</title>
+    
+
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de novo usuário</h1>
+        
+        <form id="cadastroForm">
+            <div class="form-group">
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="nascimento">Data de nascimento:</label>
+                <input type="text" id="nascimento" name="nascimento" placeholder="dd/mm/aaaa" required>
+                <div class="date-hint">Formato: dd/mm/aaaa</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" name="estado" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <div class="form-group radio-group">
+                <label>Sexo:</label>
+                <div class="radio-options">
+                    <label>
+                        <input type="radio" name="sexo" value="masculino" required> Masculino
+                    </label>
+                    <label>
+                        <input type="radio" name="sexo" value="feminino"> Feminino
+                    </label>
+                </div>
+            </div>
+            
+            <div class="form-group checkbox-group">
+                <label>Categorias de interesse (marque mais de uma):</label>
+                <div class="checkbox-options">
+                    <label><input type="checkbox" name="interesses" value="praia"> Praia</label>
+                    <label><input type="checkbox" name="interesses" value="campo"> Campo</label>
+                    <label><input type="checkbox" name="interesses" value="nacionais"> Nacionais</label>
+                    <label><input type="checkbox" name="interesses" value="internacionais"> Internacionais</label>
+                    <label><input type="checkbox" name="interesses" value="serra"> Serra</label>
+                    <label><input type="checkbox" name="interesses" value="cidade"> Cidade</label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="login">Login:</label>
+                <input type="text" id="login" name="login" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            
+            <div class="button-group">
+                <a type="reset" class="btn-secondary">Limpar</a>
+                <a href="informacoespagamento.html" type="submit" class="btn-primary">Salvar</a>
+            </div>
+        </form>
+    </div>
+
+
+<style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 100%;
+            max-width: 600px;
+        }
+        
+        h1 {
+            color: #333;
+            margin-top: 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #555;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        
+        .radio-group, .checkbox-group {
+            margin: 15px 0;
+        }
+        
+        .radio-options, .checkbox-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 8px;
+        }
+        
+        .radio-options label, .checkbox-options label {
+            font-weight: normal;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            cursor: pointer;
+        }
+        
+        .divider {
+            border-top: 1px solid #eee;
+            margin: 20px 0;
+        }
+        
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 25px;
+        }
+        
+        button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            flex: 1;
+        }
+        
+        .btn-primary {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 109px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        
+        .btn-secondary {
+            background-color: #f1f1f1;
+            color: #333;
+             padding: 12px 109px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        
+        button:hover {
+            opacity: 0.9;
+        }
+        
+        .date-hint {
+            font-size: 12px;
+            color: #777;
+            margin-top: 4px;
+        }
+    </style>
+
+    <script>
+
