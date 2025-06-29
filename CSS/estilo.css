@@ -1,0 +1,75 @@
+body { 
+    background-color: #8475bb;  
+    
+    margin: 30px 30px; 
+}
+
+.cabecalho{
+    text-align: center;
+    color: #030927; 
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 30px; 
+}
+
+.rodape{
+    text-align: center;
+    color: #030927; 
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 20px;  
+}
+
+#navegacao{
+    color: #000000; 
+    border: solid 1px #140d79;
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+    max-width: 1000px;
+}
+
+.item-pagina{
+
+
+height: 175px;
+margin-top: 20px;
+color: #ffffff;
+padding: 20px;
+background-color: #140d79;
+flex: 1;
+margin: 3px;
+}
+
+.item-pagina:hover{
+    background-color: #5039a5;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+#home{ 
+
+    background-color: #5039a5;   
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    max-width: 90%;
+
+}
+
+img{
+
+    max-width: 100%;
+
+}
+
+
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.card-img-top {
+  height: 220px; /* você pode ajustar esse valor como quiser */
+  object-fit: cover;
+}
+
